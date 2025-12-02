@@ -1,0 +1,58 @@
+@import './assets/colors';
+
+#app {
+    font-family: 'Noto Sans', Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    margin-top: 60px;
+}
+:root {
+    // not dependent
+    --light-accent: #{$red-400};
+    --medium-accent: #{$red-500};
+    --dark-accent: #{$red-700};
+}
+:root[data-theme="dark"] {
+    --background: #{$dark-gradient};
+    --primary: #{$darkest-grey};
+    --secondary: #{$darker-grey};
+    --tertiary: #{$dark-grey};
+    --quaternary: #{$grey};
+    --primary-font: #{$white};
+    --secondary-font: #{$light-grey};
+}
+:root[data-theme="light"] {
+    --background: #{$light-gradient};
+    --primary: #{$white};
+    --secondary: #{$lightest-grey};
+    --tertiary: #{$lighter-grey};
+    --quaternary: #{$light-grey};
+    --primary-font: #{$darkest-grey};
+    --secondary-font: #{$grey};
+}
+html {
+    height: 100%; // match viewport height
+    background-image: var(--background);
+    background-attachment: fixed;
+    color: var(--primary-font);
+}
+body {
+    min-height: 100%; // only works when html has explicit height
+    margin: 0 min(50px, 5rem);
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('./assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: 400 500 700; /* Normal, Medium, Bold */
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: 400 500 700;
+    font-style: italic;
+    font-display: swap;
+}

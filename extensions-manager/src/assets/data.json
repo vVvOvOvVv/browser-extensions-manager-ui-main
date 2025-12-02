@@ -1,0 +1,100 @@
+{
+    "extensions": [
+        {
+        "name": "DevLens",
+        "desc": "Quickly inspect page layouts and visualize element boundaries.",
+        "isActive": true,
+        "img": "logo-devlens.svg",
+        "alt": "DevLens Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "StyleSpy",
+        "desc": "Instantly analyze and copy CSS from any webpage element.",
+        "isActive": true,
+        "img": "logo-style-spy.svg",
+        "alt": "StyleSpy Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "SpeedBoost",
+        "desc": "Optimizes browser usage to accelerate page loading.",
+        "isActive": false,
+        "img": "logo-speed-boost.svg",
+        "alt": "SpeedBoost Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "JSONWizard",
+        "desc": "Formats, validates, and prettifies JSON responses in-browser.",
+        "isActive": true,
+        "img": "logo-json-wizard.svg",
+        "alt": "JSONWizard Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "TabMaster Pro",
+        "desc": "Organizes browser tabs into groups and sessions.",
+        "isActive": true,
+        "img": "logo-tab-master-pro.svg",
+        "alt": "TabMaster Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "ViewportBuddy",
+        "desc": "Simulates various screen resolutions directly within the browser.",
+        "isActive": false,
+        "img": "logo-viewport-buddy.svg",
+        "alt": "ViewportBuddy Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "Markup Notes",
+        "desc": "Enables annotation and notes directly onto webpages for collaborative debugging.",
+        "isActive": true,
+        "img": "logo-markup-notes.svg",
+        "alt": "Markup Notes Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "GridGuides",
+        "desc": "Overlay customizable grids and alignment guides on any webpage.",
+        "isActive": true,
+        "img": "logo-grid-guides.svg",
+        "alt": "GridGuides Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "Palette Picker",
+        "desc": "Instantly extracts color palettes from any webpage.",
+        "isActive": true,
+        "img": "logo-palette-picker.svg",
+        "alt": "Palette Picker Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "LinkChecker",
+        "desc": "Scans and highlights broken links on any page.",
+        "isActive": true,
+        "img": "logo-link-checker.svg",
+        "alt": "LinkChecker Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "DOM Snapshot",
+        "desc": "Capture and export DOM structures quickly.",
+        "isActive": false,
+        "img": "logo-dom-snapshot.svg",
+        "alt": "DOM Snapshot Logo",
+        "isDeleted": false
+        },
+        {
+        "name": "ConsolePlus",
+        "desc": "Enhanced developer console with advanced filtering and logging.",
+        "isActive": true,
+        "img": "logo-console-plus.svg",
+        "alt": "ConsolePlus Logo",
+        "isDeleted": false
+        }
+    ]
+}
