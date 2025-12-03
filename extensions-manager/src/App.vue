@@ -31,37 +31,29 @@
   </div>
   <div class="extensionsData-list">
     <box-component v-for="extension in display" :key="extension.name">
-      <table>
-        <tbody>
-          <tr class="extension-details">
-            <td>
-              <img class="extension-img"
-              :src="resolveImg(extension)"
-              :alt="resolveAlt(extension)"/>
-            </td>
-            <td>
+      <div class="extension-box-content">
+        <div class="extension-details">
+            <img class="extension-img"
+            :src="resolveImg(extension)"
+            :alt="resolveAlt(extension)"/>
+            <div>
               <div class="extension-name">
                 {{  extension.name }}
               </div>
               <div class="extension-desc">
                 {{  extension.desc }}
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <div class="functionality-row">
-                <div class="function-left">
-                  <btn-component
-                    @remove-extension="removeExtension(extension)"
-                  />
-                </div>
-                <div class="function-right"><toggle-switch :is-active="extension.isActive" @toggle-active="toggleActive(extension)"/></div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+        </div>
+        <div class="functionality-row">
+          <div class="function-left">
+            <btn-component
+              @remove-extension="removeExtension(extension)"
+            />
+          </div>
+          <div class="function-right"><toggle-switch :is-active="extension.isActive" @toggle-active="toggleActive(extension)"/></div>
+        </div>
+      </div>
     </box-component>
   </div>
 </template>
@@ -241,9 +233,16 @@ export default {
 .err-msg {
   color: var(--medium-accent);
 }
-.extension-details {
+.extension-box-content {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; 
+  min-height: 150px;
+}
+.extension-details {
   align-items: start;
+  display: flex;
 }
 .extension-img {
   width: 50px;
